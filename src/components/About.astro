@@ -1,9 +1,50 @@
+---
+import Reveal from "./Reveal.astro";
+---
 <section class="max-w-3xl mx-auto p-6 text-gray-800 dark:text-gray-200">
-  <h2 class="text-2xl font-bold mb-4 text-gray-900 dark:text-gray-100">Sobre mí</h2>
-  <p>
-    Egresado de la Ingeniería en Computación, comprometido con la seguridad y la
-    excelencia en el trabajo. Poseo una actitud positiva y resolutiva,
-    destacando por mi colaboración efectiva en equipos para resolver problemas
-    y alcanzar objetivos.
-  </p>
+
+  <Reveal>
+    <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">
+      Sobre mí
+    </h2>
+  </Reveal>
+
+  <div class="space-y-4 leading-relaxed">
+
+    <Reveal delay={120}>
+      <p>
+        Egresado de la <strong>Ingeniería en Computación</strong>, con un enfoque
+        orientado a la <strong>calidad, seguridad y mejora continua</strong> en el
+        desarrollo de soluciones tecnológicas.
+      </p>
+    </Reveal>
+
+    <Reveal delay={240}>
+      <p>
+        Cuento con experiencia en <strong>análisis de datos</strong>,
+        <strong>administración de bases de datos</strong> y
+        <strong>desarrollo de software</strong>, participando activamente en
+        proyectos académicos y profesionales.
+      </p>
+    </Reveal>
+
+    <Reveal delay={360}>
+      <p>
+        Me caracterizo por una <strong>actitud positiva y resolutiva</strong>,
+        facilidad para el <strong>trabajo en equipo</strong> y capacidad para
+        <strong>adaptarme a nuevos retos</strong>, siempre con el objetivo de
+        aportar valor y alcanzar resultados.
+      </p>
+    </Reveal>
+
+    <Reveal delay={480}>
+      <p>
+        Busco integrarme en entornos donde pueda
+        <strong>aprender continuamente</strong>, aplicar mis conocimientos y
+        contribuir al desarrollo de soluciones eficientes y bien estructuradas.
+      </p>
+    </Reveal>
+
+  </div>
+
 </section>

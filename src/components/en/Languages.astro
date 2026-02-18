@@ -1,0 +1,47 @@
+---
+import Section from "../Section.astro";
+import Reveal from "../Reveal.astro";
+---
+<Section title="Languages">
+
+  <div class="grid sm:grid-cols-2 gap-6">
+
+    <!-- Spanish -->
+    <Reveal delay={0}>
+      <div
+        class="flex items-center justify-between
+               bg-white/70 dark:bg-gray-900/70
+               backdrop-blur rounded-xl p-6
+               shadow-sm hover:shadow-md
+               transition hover:-translate-y-1 cursor-default"
+      >
+        <div>
+          <p class="font-medium text-lg">Spanish</p>
+          <p class="text-sm text-gray-500">Native</p>
+        </div>
+
+        <span class="text-2xl">🇲🇽</span>
+      </div>
+    </Reveal>
+
+    <!-- English -->
+    <Reveal delay={120}>
+      <div
+        class="flex items-center justify-between
+               bg-white/70 dark:bg-gray-900/70
+               backdrop-blur rounded-xl p-6
+               shadow-sm hover:shadow-md
+               transition hover:-translate-y-1 cursor-default"
+      >
+        <div>
+          <p class="font-medium text-lg">English</p>
+          <p class="text-sm text-gray-500">Intermediate - Advanced</p>
+        </div>
+
+        <span class="text-2xl">🇺🇸</span>
+      </div>
+    </Reveal>
+
+  </div>
+
+</Section>

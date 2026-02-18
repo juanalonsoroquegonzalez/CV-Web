@@ -1,0 +1,28 @@
+<button
+  id="theme-toggle"
+  class="p-2 rounded-lg
+         hover:bg-gray-200 dark:hover:bg-gray-700
+         transition"
+  aria-label="Toggle theme"
+>
+  🌙
+</button>
+
+<script>
+  type Theme = "light" | "dark";
+
+  const button = document.getElementById("theme-toggle");
+
+  const applyTheme = (theme: Theme) => {
+    document.documentElement.classList.toggle("dark", theme === "dark");
+    localStorage.setItem("theme", theme);
+  };
+
+  const savedTheme = (localStorage.getItem("theme") as Theme) || "light";
+  applyTheme(savedTheme);
+
+  button?.addEventListener("click", () => {
+    const isDark = document.documentElement.classList.contains("dark");
+    applyTheme(isDark ? "light" : "dark");
+  });
+</script>
